@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ANK | Fabricación de Uniformes Escolares y Deportivos</title>
+  <meta name="description" content="ANK: más de 10 años fabricando uniformes escolares, deportivos y prendas textiles para instituciones educativas y clientes particulares. Solicita tu cotización." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <meta property="og:title" content="ANK | Uniformes Escolares y Deportivos" />
+  <meta property="og:description" content="Calidad, confianza y excelencia en la confección de uniformes. Solicita tu cotización." />
+  <meta property="og:type" content="website" />
+
+  <!-- Tipografías (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0a0a'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='800' font-size='26' text-anchor='middle' fill='%231d4ed8'%3EANK%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== Sprite de iconos SVG (sin dependencias externas) ===== -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-shirt" viewBox="0 0 24 24"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></symbol>
+    <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22M18 2H6v7a6 6 0 0 0 12 0V2z"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4zM3 6h18M16 10a4 4 0 0 1-8 0"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5zM6 12v5c3 3 9 3 12 0v-5"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+    <symbol id="i-scissors" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88M14.47 14.48 20 20M8.12 8.12 12 12"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#inicio">Saltar al contenido</a>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#inicio" class="logo" aria-label="ANK - Inicio">
+        <span class="logo__mark">A</span><span class="logo__text">ANK</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a href="#inicio" class="nav__link" data-section="inicio">Inicio</a></li>
+          <li><a href="#categorias" class="nav__link" data-section="categorias">Categorías</a></li>
+          <li><a href="#contacto" class="nav__link" data-section="contacto">Contacto</a></li>
+        </ul>
+        <button class="btn btn--primary btn--sm nav__cta" data-quote>Cotizar</button>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+        <svg class="icon"><use href="#i-menu"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== INICIO ===================== -->
+    <section class="hero" id="inicio">
+      <div class="container hero__content">
+        <p class="eyebrow reveal">Confección textil profesional</p>
+        <h1 class="hero__title reveal" style="--d:.08s">ANK</h1>
+        <h2 class="hero__subtitle reveal" style="--d:.16s">Fabricación de Uniformes Escolares y Deportivos</h2>
+        <p class="hero__text reveal" style="--d:.24s">
+          Más de 10 años brindando calidad, confianza y excelencia en la confección de uniformes para instituciones educativas y clientes particulares.
+        </p>
+        <div class="hero__actions reveal" style="--d:.32s">
+          <button class="btn btn--primary btn--lg" data-quote>
+            Solicitar Cotización <svg class="icon"><use href="#i-arrow"/></svg>
+          </button>
+          <a class="btn btn--ghost btn--lg" href="#productos">Ver Productos</a>
+        </div>
+
+        <ul class="stats reveal" style="--d:.42s">
+          <li class="stat">
+            <svg class="icon stat__icon"><use href="#i-award"/></svg>
+            <strong class="stat__num"><span data-count="10" data-prefix="+">0</span></strong>
+            <span class="stat__label">años de experiencia</span>
+          </li>
+          <li class="stat">
+            <svg class="icon stat__icon"><use href="#i-shirt"/></svg>
+            <strong class="stat__num"><span data-count="50000" data-prefix="+" data-sep=".">0</span></strong>
+            <span class="stat__label">prendas confeccionadas</span>
+          </li>
+          <li class="stat">
+            <svg class="icon stat__icon"><use href="#i-cap"/></svg>
+            <strong class="stat__num"><span data-count="6" data-prefix="+">0</span></strong>
+            <span class="stat__label">instituciones educativas atendidas</span>
+          </li>
+          <li class="stat">
+            <svg class="icon stat__icon"><use href="#i-users"/></svg>
+            <strong class="stat__num">Cientos</strong>
+            <span class="stat__label">de clientes satisfechos</span>
+          </li>
+        </ul>
+      </div>
+
+      <a href="#historia" class="scroll-hint" aria-label="Ir a Nuestra Historia">
+        <svg class="icon"><use href="#i-down"/></svg>
+      </a>
+    </section>
+
+    <!-- ===================== NUESTRA HISTORIA ===================== -->
+    <section class="section story" id="historia">
+      <div class="container story__grid">
+        <div class="story__visual reveal reveal--left">
+          <div class="visual visual--tall" data-parallax="0.04">
+            <svg class="icon"><use href="#i-scissors"/></svg>
+            <span class="visual__tag">Taller propio</span>
+          </div>
+          <div class="visual visual--small" data-parallax="-0.05">
+            <svg class="icon"><use href="#i-shirt"/></svg>
+          </div>
+          <div class="story__badge">
+            <strong>+10</strong><span>años de trayectoria</span>
+          </div>
+        </div>
+
+        <div class="story__text">
+          <p class="eyebrow reveal">Quiénes somos</p>
+          <h2 class="section__title reveal" style="--d:.06s">Nuestra Historia</h2>
+          <p class="reveal" style="--d:.12s">
+            ANK es una empresa especializada en la confección de uniformes escolares y deportivos. Durante más de una década hemos trabajado junto a instituciones educativas y clientes particulares elaborando prendas de alta calidad, comodidad y durabilidad. Nuestro compromiso con la excelencia y la satisfacción de nuestros clientes nos ha permitido crecer y consolidarnos como una empresa confiable en el sector textil.
+          </p>
+          <ul class="checks reveal" style="--d:.2s">
+            <li><svg class="icon"><use href="#i-check"/></svg> Alta calidad y durabilidad</li>
+            <li><svg class="icon"><use href="#i-check"/></svg> Comodidad en cada prenda</li>
+            <li><svg class="icon"><use href="#i-check"/></svg> Atención personalizada</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PRODUCTOS DESTACADOS ===================== -->
+    <section class="section section--dark" id="productos">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Lo que hacemos</p>
+          <h2 class="section__title">Nuestros Productos</h2>
+        </header>
+
+        <div class="feature-grid">
+          <article class="feature reveal" style="--d:0s" data-goto="#educativos" tabindex="0" role="link" aria-label="Uniformes Educativos">
+            <span class="feature__icon"><svg class="icon"><use href="#i-cap"/></svg></span>
+            <h3>Uniformes Educativos</h3>
+            <p>Uniformes confeccionados con altos estándares de calidad para instituciones educativas.</p>
+            <a class="btn btn--light" href="#educativos">Ver Categoría <svg class="icon"><use href="#i-arrow"/></svg></a>
+          </article>
+          <article class="feature reveal" style="--d:.1s" data-goto="#deportivos" tabindex="0" role="link" aria-label="Uniformes Deportivos">
+            <span class="feature__icon"><svg class="icon"><use href="#i-trophy"/></svg></span>
+            <h3>Uniformes Deportivos</h3>
+            <p>Prendas deportivas personalizadas para escuelas, colegios, academias y organizaciones.</p>
+            <a class="btn btn--light" href="#deportivos">Ver Categoría <svg class="icon"><use href="#i-arrow"/></svg></a>
+          </article>
+          <article class="feature reveal" style="--d:.2s" data-goto="#otros" tabindex="0" role="link" aria-label="Otros">
+            <span class="feature__icon"><svg class="icon"><use href="#i-bag"/></svg></span>
+            <h3>Otros</h3>
+            <p>Diversas prendas y productos textiles adaptados a las necesidades de nuestros clientes.</p>
+            <a class="btn btn--light" href="#otros">Ver Categoría <svg class="icon"><use href="#i-arrow"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CATEGORÍAS ===================== -->
+    <section class="section categories" id="categorias">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Catálogo</p>
+          <h2 class="section__title">Categorías</h2>
+          <p class="section__lead">Explora nuestras líneas de producto y solicita una cotización a tu medida.</p>
+        </header>
+
+        <!-- Uniformes Educativos -->
+        <div class="subsection" id="educativos">
+          <div class="subsection__head reveal">
+            <span class="subsection__icon"><svg class="icon"><use href="#i-cap"/></svg></span>
+            <div><h3>Uniformes Educativos</h3><p>Instituciones que confían en ANK.</p></div>
+          </div>
+          <div class="card-grid" id="grid-educativos"></div>
+        </div>
+
+        <!-- Uniformes Deportivos -->
+        <div class="subsection" id="deportivos">
+          <div class="subsection__head reveal">
+            <span class="subsection__icon"><svg class="icon"><use href="#i-trophy"/></svg></span>
+            <div><h3>Uniformes Deportivos</h3><p>Rendimiento, comodidad y personalización.</p></div>
+          </div>
+          <div class="card-grid" id="grid-deportivos"></div>
+        </div>
+
+        <!-- Otros -->
+        <div class="subsection" id="otros">
+          <div class="subsection__head reveal">
+            <span class="subsection__icon"><svg class="icon"><use href="#i-bag"/></svg></span>
+            <div><h3>Otros</h3><p>Prendas y productos textiles a la medida.</p></div>
+          </div>
+          <div class="card-grid" id="grid-otros"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACTO ===================== -->
+    <section class="section section--dark contact" id="contacto">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Visítanos</p>
+          <h2 class="section__title">Nuestras Sucursales</h2>
+        </header>
+
+        <div class="branch-grid">
+          <!-- Sucursal 1 -->
+          <article class="branch reveal" id="cusubamba">
+            <div class="branch__info">
+              <h3>Local Santa Rosa de Cusubamba</h3>
+              <p>Si te encuentras en Cayambe, El Quinche o sectores cercanos, esta sucursal te permitirá recibir atención personalizada de forma rápida y cómoda.</p>
+              <ul class="info-list">
+                <li><svg class="icon"><use href="#i-phone"/></svg><span><small>Contacto</small><b data-phone="cusubamba">+593 99 840 3920</b></span></li>
+                <li><svg class="icon"><use href="#i-clock"/></svg><span><small>Horario de atención</small><b>Lunes a Sábado · 08:00 – 18:00</b></span></li>
+                <li><svg class="icon"><use href="#i-pin"/></svg><span><small>Dirección</small><b>Santa Rosa de Cusubamba, Cayambe, Pichincha – Ecuador</b></span></li>
+              </ul>
+              <a class="btn btn--primary" data-wa="cusubamba" href="#" target="_blank" rel="noopener">
+                <svg class="icon"><use href="#i-whatsapp"/></svg> Contáctanos
+              </a>
+            </div>
+            <div class="branch__map">
+              <iframe title="Mapa Local Santa Rosa de Cusubamba" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                src="https://maps.google.com/maps?q=-0.0440238,-78.2858946&z=16&output=embed"></iframe>
+            </div>
+          </article>
+
+          <!-- Sucursal 2 -->
+          <article class="branch reveal" id="guayllabamba">
+            <div class="branch__info">
+              <h3>Local Guayllabamba</h3>
+              <p>Si te encuentras en Guayllabamba, Quito o sectores cercanos, te esperamos en nuestra sucursal para brindarte la mejor atención y asesoramiento.</p>
+              <ul class="info-list">
+                <li><svg class="icon"><use href="#i-phone"/></svg><span><small>Contacto</small><b data-phone="guayllabamba">+593 99 870 7995</b></span></li>
+                <li><svg class="icon"><use href="#i-clock"/></svg><span><small>Horario de atención</small><b>Lunes a Sábado · 08:00 – 18:00</b></span></li>
+                <li><svg class="icon"><use href="#i-pin"/></svg><span><small>Dirección</small><b>Guayllabamba, Pichincha – Ecuador</b></span></li>
+              </ul>
+              <a class="btn btn--primary" data-wa="guayllabamba" href="#" target="_blank" rel="noopener">
+                <svg class="icon"><use href="#i-whatsapp"/></svg> Contáctanos
+              </a>
+            </div>
+            <div class="branch__map">
+              <iframe title="Mapa Local Guayllabamba" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                src="https://maps.google.com/maps?q=-0.062067,-78.3505&z=16&output=embed"></iframe>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#inicio" class="logo"><span class="logo__mark">A</span><span class="logo__text">ANK</span></a>
+        <p>Fabricación de uniformes escolares, deportivos y otras prendas con más de 10 años de trayectoria.</p>
+        <div class="social">
+          <a href="#" aria-label="Facebook" data-social="facebook" target="_blank" rel="noopener"><svg class="icon"><use href="#i-facebook"/></svg></a>
+          <a href="#" aria-label="Instagram" data-social="instagram" target="_blank" rel="noopener"><svg class="icon"><use href="#i-instagram"/></svg></a>
+          <a href="#" aria-label="WhatsApp" data-wa="cusubamba" target="_blank" rel="noopener"><svg class="icon"><use href="#i-whatsapp"/></svg></a>
+        </div>
+      </div>
+
+      <nav class="footer__col" aria-label="Inicio">
+        <h4>Inicio</h4>
+        <a href="#historia">Nuestra Historia</a>
+        <a href="#productos">Productos</a>
+      </nav>
+      <nav class="footer__col" aria-label="Categorías">
+        <h4>Categorías</h4>
+        <a href="#educativos">Uniformes Educativos</a>
+        <a href="#deportivos">Uniformes Deportivos</a>
+        <a href="#otros">Otros</a>
+      </nav>
+      <nav class="footer__col" aria-label="Contacto">
+        <h4>Contacto</h4>
+        <a href="#cusubamba">Local Santa Rosa de Cusubamba</a>
+        <a href="#guayllabamba">Local Guayllabamba</a>
+      </nav>
+      <nav class="footer__col" aria-label="Información legal">
+        <h4>Información Legal</h4>
+        <a href="#" data-legal="Términos y Condiciones">Términos y Condiciones</a>
+        <a href="#" data-legal="Políticas de Privacidad">Políticas de Privacidad</a>
+        <a href="#" data-legal="Aviso Legal">Aviso Legal</a>
+        <a href="#" data-legal="Protección de Datos">Protección de Datos</a>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <div class="container"><p>© <span id="year">2025</span> ANK - Todos los derechos reservados.</p></div>
+    </div>
+  </footer>
+
+  <!-- Botón flotante WhatsApp -->
+  <a class="fab" data-wa="cusubamba" href="#" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    <svg class="icon"><use href="#i-whatsapp"/></svg>
+  </a>
+
+  <!-- ===================== MODAL COTIZACIÓN ===================== -->
+  <div class="modal" id="quoteModal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="quoteTitle">
+      <button class="modal__close" data-close aria-label="Cerrar"><svg class="icon"><use href="#i-x"/></svg></button>
+
+      <div class="modal__body">
+        <p class="eyebrow">Sin compromiso</p>
+        <h3 id="quoteTitle">¿Dónde quieres cotizar?</h3>
+        <p class="modal__lead" id="quoteLead">Elige el local y te atenderemos por WhatsApp.</p>
+
+        <div class="branch-options">
+          <a class="branch-option" data-local="cusubamba" href="#" target="_blank" rel="noopener">
+            <span class="branch-option__icon"><svg class="icon"><use href="#i-pin"/></svg></span>
+            <span class="branch-option__text"><b>Santa Rosa de Cusubamba</b><small>Cayambe, El Quinche y cercanías</small></span>
+            <svg class="icon branch-option__arrow"><use href="#i-arrow"/></svg>
+          </a>
+          <a class="branch-option" data-local="guayllabamba" href="#" target="_blank" rel="noopener">
+            <span class="branch-option__icon"><svg class="icon"><use href="#i-pin"/></svg></span>
+            <span class="branch-option__text"><b>Guayllabamba</b><small>Guayllabamba, Quito y cercanías</small></span>
+            <svg class="icon branch-option__arrow"><use href="#i-arrow"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal legal genérico -->
+  <div class="modal" id="legalModal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="legalTitle">
+      <button class="modal__close" data-close aria-label="Cerrar"><svg class="icon"><use href="#i-x"/></svg></button>
+      <div class="modal__body">
+        <h3 id="legalTitle">Información legal</h3>
+        <p>Este contenido es un texto de ejemplo. Reemplázalo con el documento legal oficial de ANK antes de publicar el sitio.</p>
+        <button class="btn btn--primary" data-close>Entendido</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
