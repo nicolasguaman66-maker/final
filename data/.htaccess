@@ -1,0 +1,6 @@
+Options -Indexes
+<IfModule mod_headers.c>
+  <Files "contenido.json">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </Files>
+</IfModule>

@@ -13,10 +13,10 @@
   <!-- Tipografías (Google Fonts) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&family=Archivo+Black&display=swap" rel="stylesheet" />
 
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0a0a'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='800' font-size='26' text-anchor='middle' fill='%231d4ed8'%3EANK%3C/text%3E%3C/svg%3E" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0a0a'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='800' font-size='26' text-anchor='middle' fill='%23f2931f'%3EANK%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="style.css?v=20261127" />
 </head>
 <body>
 
@@ -49,8 +49,8 @@
   <!-- ===================== NAVBAR ===================== -->
   <header class="navbar" id="navbar">
     <div class="container navbar__inner">
-      <a href="#inicio" class="logo" aria-label="ANK - Inicio">
-        <span class="logo__mark">A</span><span class="logo__text">ANK</span>
+      <a href="#inicio" class="logo" aria-label="ANK Sports - Inicio">
+        <img class="logo__img" src="img/logo-ank-nav.png" alt="ANK Sports" width="480" height="391" />
       </a>
 
       <nav class="nav" id="nav" aria-label="Navegación principal">
@@ -71,7 +71,11 @@
   <main>
     <!-- ===================== INICIO ===================== -->
     <section class="hero" id="inicio">
+      <!-- Fondo: img/portadas/inicio.jpg con efectos. Si subes fotos en el panel (pestaña "Fondo del inicio"), se usan esas. -->
+      <div class="hero__slides" id="heroSlides" aria-hidden="true"></div>
+
       <div class="container hero__content">
+        <div class="hero__panel">
         <p class="eyebrow reveal">Confección textil profesional</p>
         <h1 class="hero__title reveal" style="--d:.08s">ANK</h1>
         <h2 class="hero__subtitle reveal" style="--d:.16s">Fabricación de Uniformes Escolares y Deportivos</h2>
@@ -84,6 +88,8 @@
           </button>
           <a class="btn btn--ghost btn--lg" href="#productos">Ver Productos</a>
         </div>
+
+        </div><!-- /hero__panel -->
 
         <ul class="stats reveal" style="--d:.42s">
           <li class="stat">
@@ -114,16 +120,24 @@
       </a>
     </section>
 
+    <!-- ===================== CINTA ===================== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group"><span>Uniformes deportivos</span><span>Personalizados</span><span>Fabricantes directos</span><span>Sublimados</span><span>Más de 10 años de experiencia</span><span>Uniformes escolares</span></div>
+        <div class="marquee__group"><span>Uniformes deportivos</span><span>Personalizados</span><span>Fabricantes directos</span><span>Sublimados</span><span>Más de 10 años de experiencia</span><span>Uniformes escolares</span></div>
+      </div>
+    </div>
+
     <!-- ===================== NUESTRA HISTORIA ===================== -->
     <section class="section story" id="historia">
       <div class="container story__grid">
         <div class="story__visual reveal reveal--left">
           <div class="visual visual--tall" data-parallax="0.04">
-            <svg class="icon"><use href="#i-scissors"/></svg>
+            <img src="img/uniformes-ank-sports.jpg" alt="Uniformes deportivos personalizados ANK Sports: fabricantes directos, sublimados" loading="lazy" />
             <span class="visual__tag">Taller propio</span>
           </div>
           <div class="visual visual--small" data-parallax="-0.05">
-            <svg class="icon"><use href="#i-shirt"/></svg>
+            <img src="img/logo-ank-sports.jpg" alt="Logotipo de ANK Sports" loading="lazy" />
           </div>
           <div class="story__badge">
             <strong>+10</strong><span>años de trayectoria</span>
@@ -154,19 +168,22 @@
         </header>
 
         <div class="feature-grid">
-          <article class="feature reveal" style="--d:0s" data-goto="#educativos" tabindex="0" role="link" aria-label="Uniformes Educativos">
-            <span class="feature__icon"><svg class="icon"><use href="#i-cap"/></svg></span>
-            <h3>Uniformes Educativos</h3>
-            <p>Uniformes confeccionados con altos estándares de calidad para instituciones educativas.</p>
-            <a class="btn btn--light" href="#educativos">Ver Categoría <svg class="icon"><use href="#i-arrow"/></svg></a>
-          </article>
-          <article class="feature reveal" style="--d:.1s" data-goto="#deportivos" tabindex="0" role="link" aria-label="Uniformes Deportivos">
+          <article class="feature reveal" style="--d:0s" data-goto="#deportivos" tabindex="0" role="link" aria-label="Uniformes Deportivos">
+            <div class="feature__bg" aria-hidden="true"><img src="img/portadas/cat-deportivos.jpg" alt="" loading="lazy" /></div>
             <span class="feature__icon"><svg class="icon"><use href="#i-trophy"/></svg></span>
             <h3>Uniformes Deportivos</h3>
             <p>Prendas deportivas personalizadas para escuelas, colegios, academias y organizaciones.</p>
             <a class="btn btn--light" href="#deportivos">Ver Categoría <svg class="icon"><use href="#i-arrow"/></svg></a>
           </article>
+          <article class="feature reveal" style="--d:.1s" data-goto="#educativos" tabindex="0" role="link" aria-label="Uniformes Educativos">
+            <div class="feature__bg" aria-hidden="true"><img src="img/portadas/cat-educativos.jpg" alt="" loading="lazy" /></div>
+            <span class="feature__icon"><svg class="icon"><use href="#i-cap"/></svg></span>
+            <h3>Uniformes Educativos</h3>
+            <p>Uniformes confeccionados con altos estándares de calidad para instituciones educativas.</p>
+            <a class="btn btn--light" href="#educativos">Ver Categoría <svg class="icon"><use href="#i-arrow"/></svg></a>
+          </article>
           <article class="feature reveal" style="--d:.2s" data-goto="#otros" tabindex="0" role="link" aria-label="Otros">
+            <div class="feature__bg" aria-hidden="true"><img src="img/portadas/cat-otros.jpg" alt="" loading="lazy" /></div>
             <span class="feature__icon"><svg class="icon"><use href="#i-bag"/></svg></span>
             <h3>Otros</h3>
             <p>Diversas prendas y productos textiles adaptados a las necesidades de nuestros clientes.</p>
@@ -185,6 +202,15 @@
           <p class="section__lead">Explora nuestras líneas de producto y solicita una cotización a tu medida.</p>
         </header>
 
+        <!-- Uniformes Deportivos -->
+        <div class="subsection" id="deportivos">
+          <div class="subsection__head reveal">
+            <span class="subsection__icon"><svg class="icon"><use href="#i-trophy"/></svg></span>
+            <div><h3>Uniformes Deportivos</h3><p>Rendimiento, comodidad y personalización.</p></div>
+          </div>
+          <div class="card-grid card-grid--four" id="grid-deportivos"></div>
+        </div>
+
         <!-- Uniformes Educativos -->
         <div class="subsection" id="educativos">
           <div class="subsection__head reveal">
@@ -194,22 +220,22 @@
           <div class="card-grid" id="grid-educativos"></div>
         </div>
 
-        <!-- Uniformes Deportivos -->
-        <div class="subsection" id="deportivos">
-          <div class="subsection__head reveal">
-            <span class="subsection__icon"><svg class="icon"><use href="#i-trophy"/></svg></span>
-            <div><h3>Uniformes Deportivos</h3><p>Rendimiento, comodidad y personalización.</p></div>
-          </div>
-          <div class="card-grid" id="grid-deportivos"></div>
-        </div>
-
         <!-- Otros -->
         <div class="subsection" id="otros">
           <div class="subsection__head reveal">
             <span class="subsection__icon"><svg class="icon"><use href="#i-bag"/></svg></span>
             <div><h3>Otros</h3><p>Prendas y productos textiles a la medida.</p></div>
           </div>
-          <div class="card-grid" id="grid-otros"></div>
+          <div class="card-grid card-grid--trio" id="grid-otros"></div>
+        </div>
+
+        <!-- Promociones (se llenan desde el panel: tupagina.com/admin). Si no hay promociones vigentes, este bloque no se muestra. -->
+        <div class="subsection" id="promociones" hidden>
+          <div class="subsection__head">
+            <span class="subsection__icon"><svg class="icon"><use href="#i-award"/></svg></span>
+            <div><h3>Promociones</h3><p>Ofertas vigentes por tiempo limitado.</p></div>
+          </div>
+          <div class="card-grid card-grid--duo" id="grid-promociones"></div>
         </div>
       </div>
     </section>
@@ -341,6 +367,53 @@
     </div>
   </div>
 
+  <!-- ===================== MODAL UNIFORMES POR INSTITUCIÓN ===================== -->
+  <div class="modal" id="uniformsModal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="uniformsTitle">
+      <button class="modal__close" data-close aria-label="Cerrar"><svg class="icon"><use href="#i-x"/></svg></button>
+      <div class="modal__body">
+        <p class="eyebrow">Uniformes</p>
+        <h3 id="uniformsTitle">Institución</h3>
+        <div class="uniform-tabs" role="tablist" aria-label="Tipo de uniforme">
+          <button type="button" class="uniform-tab" role="tab" data-uniform-tab="deportivo">Uniforme deportivo</button>
+          <button type="button" class="uniform-tab" role="tab" data-uniform-tab="lunes">Uniforme día lunes</button>
+          <button type="button" class="uniform-tab" role="tab" data-uniform-tab="diario">Uniforme diario</button>
+        </div>
+        <div class="uniform-view">
+          <img id="uniformsImg" alt="" hidden />
+          <div class="uniform-view__empty" id="uniformsEmpty">
+            <svg class="icon"><use href="#i-shirt"/></svg>
+            <span>Foto próximamente</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== MODAL ÁLBUM DE PRODUCTOS (UNIFORMES DEPORTIVOS) ===================== -->
+  <div class="modal" id="galleryModal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__dialog modal__dialog--gallery" role="dialog" aria-modal="true" aria-labelledby="galleryTitle">
+      <button class="modal__close" data-close aria-label="Cerrar"><svg class="icon"><use href="#i-x"/></svg></button>
+      <div class="modal__body">
+        <p class="eyebrow">Productos</p>
+        <h3 id="galleryTitle">Productos</h3>
+        <div class="gallery__stage">
+          <img id="galleryImg" alt="" hidden />
+          <div class="uniform-view__empty" id="galleryEmpty">
+            <svg class="icon"><use href="#i-shirt"/></svg>
+            <span>Fotos próximamente</span>
+          </div>
+          <button type="button" class="gallery__nav gallery__nav--prev" id="galleryPrev" aria-label="Foto anterior"><svg class="icon"><use href="#i-arrow"/></svg></button>
+          <button type="button" class="gallery__nav gallery__nav--next" id="galleryNext" aria-label="Foto siguiente"><svg class="icon"><use href="#i-arrow"/></svg></button>
+          <span class="gallery__count" id="galleryCount">1 / 1</span>
+        </div>
+        <div class="gallery__thumbs" id="galleryThumbs"></div>
+      </div>
+    </div>
+  </div>
+
   <!-- Modal legal genérico -->
   <div class="modal" id="legalModal" aria-hidden="true">
     <div class="modal__backdrop" data-close></div>
@@ -348,12 +421,142 @@
       <button class="modal__close" data-close aria-label="Cerrar"><svg class="icon"><use href="#i-x"/></svg></button>
       <div class="modal__body">
         <h3 id="legalTitle">Información legal</h3>
-        <p>Este contenido es un texto de ejemplo. Reemplázalo con el documento legal oficial de ANK antes de publicar el sitio.</p>
+        <div class="legal-content" id="legalContent">
+
+          <!-- ===== TÉRMINOS Y CONDICIONES ===== -->
+          <article data-legal-doc="Términos y Condiciones" hidden>
+            <p class="legal-content__date">Última actualización: noviembre de 2026</p>
+            <h4>1. Aceptación</h4>
+            <p>Al acceder y navegar en este sitio web aceptas los presentes Términos y Condiciones. Si no estás de acuerdo con ellos, te pedimos no utilizar el sitio.</p>
+            <h4>2. Finalidad del sitio</h4>
+            <p>Este sitio web es un catálogo informativo de ANK. Su único propósito es mostrar nuestros productos (uniformes educativos, deportivos y otras prendas) para que puedas conocerlos y solicitar una cotización. <b>En este sitio no se realizan compras, pagos ni transacciones en línea.</b></p>
+            <h4>3. Cotizaciones y pedidos</h4>
+            <ul>
+              <li>Las solicitudes de cotización se atienden exclusivamente por WhatsApp a través de los números oficiales de nuestros locales de Santa Rosa de Cusubamba y Guayllabamba.</li>
+              <li>Solicitar una cotización no genera ninguna obligación de compra para ti ni de venta para ANK.</li>
+              <li>El precio, las cantidades, tallas, telas, personalización, plazos de entrega, forma de pago y demás condiciones se acuerdan directamente por WhatsApp o en nuestros locales. El pedido solo se considera confirmado cuando ambas partes aceptan esas condiciones.</li>
+              <li>Las cotizaciones tienen la vigencia que se indique en cada una; pasado ese tiempo los precios pueden variar.</li>
+            </ul>
+            <h4>4. Información de los productos</h4>
+            <p>Procuramos que las fotografías y descripciones sean lo más fieles posible. Sin embargo, los colores pueden verse distintos según la pantalla de cada dispositivo, y los diseños, modelos y disponibilidad pueden cambiar sin previo aviso. Las imágenes son referenciales; las características finales de cada prenda son las acordadas en la cotización.</p>
+            <h4>5. Prendas personalizadas y garantía</h4>
+            <p>Al tratarse en su mayoría de prendas confeccionadas a medida o personalizadas (con logos, escudos, nombres o números), no se aceptan cambios ni devoluciones por cambio de opinión una vez aprobado el pedido. Esto no afecta los derechos que te reconoce la Ley Orgánica de Defensa del Consumidor: si una prenda presenta defectos de fabricación o no corresponde a lo acordado, comunícate con nosotros por WhatsApp para darte una solución.</p>
+            <h4>6. Promociones</h4>
+            <ul>
+              <li>Las promociones se publican en la sección "Promociones" de este sitio. Cada una indica su fecha de inicio y de fin, y el precio anterior y el nuevo precio, o el beneficio que obtiene el cliente, conforme a la Ley Orgánica de Defensa del Consumidor.</li>
+              <li>Una promoción solo es válida dentro de las fechas publicadas. Para acceder a ella, el cliente debe solicitarla por WhatsApp, mencionando la promoción, mientras esté vigente; el pedido se confirma con la cotización correspondiente.</li>
+              <li>Si una promoción tiene unidades limitadas, tallas o modelos específicos, montos mínimos u otros requisitos, estos se indican en sus condiciones. Salvo que se diga lo contrario, las promociones no son acumulables entre sí ni con otros beneficios.</li>
+              <li>Los precios de las promociones están expresados en dólares de los Estados Unidos de América e incluyen impuestos.</li>
+              <li>ANK solo podrá terminar una promoción antes de la fecha publicada por una causa justificada (por ejemplo, haberse agotado las unidades informadas). En ese caso se retirará del sitio y se respetarán las solicitudes hechas mientras estaba vigente.</li>
+              <li>Si por un error evidente de digitación se publicara un precio o beneficio claramente equivocado, ANK lo informará al cliente antes de confirmar el pedido, y el cliente podrá decidir libremente si continúa o no.</li>
+              <li>Las imágenes de las promociones son referenciales; las características finales de cada prenda se confirman en la cotización.</li>
+              <li>Si alguna vez se realizan concursos o sorteos, se publicarán sus bases, el número o monto de los premios, el plazo y el lugar para reclamarlos, y sus resultados.</li>
+            </ul>
+            <h4>7. Uso adecuado del sitio</h4>
+            <p>Te comprometes a usar este sitio de forma lícita, sin dañarlo, alterarlo ni utilizar su contenido con fines fraudulentos o contrarios a la ley.</p>
+            <h4>8. Enlaces a terceros</h4>
+            <p>El sitio contiene enlaces a WhatsApp, Facebook e Instagram. Estos servicios son de terceros, tienen sus propios términos y políticas, y ANK no es responsable de su contenido ni de su funcionamiento.</p>
+            <h4>9. Modificaciones</h4>
+            <p>ANK puede actualizar estos Términos y Condiciones en cualquier momento. La versión vigente será siempre la publicada en este sitio.</p>
+            <h4>10. Legislación aplicable</h4>
+            <p>Estos términos se rigen por las leyes de la República del Ecuador. Cualquier controversia se someterá a los jueces competentes de la provincia de Pichincha.</p>
+          </article>
+
+          <!-- ===== POLÍTICAS DE PRIVACIDAD ===== -->
+          <article data-legal-doc="Políticas de Privacidad" hidden>
+            <p class="legal-content__date">Última actualización: noviembre de 2026</p>
+            <h4>1. Compromiso</h4>
+            <p>En ANK respetamos tu privacidad. Esta política explica qué información recibimos cuando visitas nuestro sitio o nos contactas, y cómo la usamos.</p>
+            <h4>2. Información que NO recopilamos en el sitio</h4>
+            <p>Este sitio web no tiene formularios de registro, no crea cuentas de usuario, no solicita datos de pago y no procesa compras. Puedes navegar por el catálogo sin entregarnos ningún dato personal.</p>
+            <h4>3. Información que recibimos por WhatsApp</h4>
+            <p>Cuando decides escribirnos por WhatsApp para cotizar, recibimos los datos que tú mismo nos compartes, por ejemplo:</p>
+            <ul>
+              <li>Nombre y número de teléfono.</li>
+              <li>Institución, empresa o equipo al que representas.</li>
+              <li>Detalles del pedido: prendas, cantidades, tallas, logos, nombres o números a estampar.</li>
+              <li>Dirección o ciudad de entrega, si es necesaria.</li>
+            </ul>
+            <h4>4. Para qué usamos tu información</h4>
+            <ul>
+              <li>Responder tus consultas y preparar tu cotización.</li>
+              <li>Coordinar la confección, entrega y pago de tu pedido.</li>
+              <li>Mantener contacto contigo sobre el pedido en curso.</li>
+            </ul>
+            <p>No vendemos, alquilamos ni compartimos tu información con terceros con fines comerciales.</p>
+            <h4>5. Servicios de terceros</h4>
+            <p>Para funcionar, el sitio utiliza servicios externos como Google Fonts (tipografías) y enlaces a WhatsApp, Facebook e Instagram (Meta). Estos proveedores pueden registrar datos técnicos de tu navegación, como tu dirección IP o tipo de navegador, según sus propias políticas de privacidad.</p>
+            <h4>6. Cookies</h4>
+            <p>Este sitio no utiliza cookies propias de seguimiento ni de publicidad. El panel interno de administración usa una cookie técnica de sesión únicamente para el personal autorizado de ANK; los visitantes del sitio no la reciben. Los servicios de terceros mencionados podrían usar sus propias cookies o tecnologías similares.</p>
+            <h4>7. Menores de edad</h4>
+            <p>Si para un pedido de uniformes escolares nos compartes nombres o tallas de estudiantes, lo hacemos bajo la responsabilidad de sus padres, representantes o de la institución educativa, y esa información se usa únicamente para confeccionar las prendas.</p>
+            <h4>8. Cambios a esta política</h4>
+            <p>Podemos actualizar esta política cuando sea necesario. Te recomendamos revisarla periódicamente.</p>
+          </article>
+
+          <!-- ===== AVISO LEGAL ===== -->
+          <article data-legal-doc="Aviso Legal" hidden>
+            <p class="legal-content__date">Última actualización: noviembre de 2026</p>
+            <h4>1. Titular del sitio</h4>
+            <ul>
+              <li><b>Nombre comercial:</b> ANK</li>
+              <li><b>Titular:</b> Maritsa Elizabeth Azaiga Rojas</li>
+              <li><b>RUC:</b> 1717032229001</li>
+              <li><b>Actividad:</b> Confección y comercialización de uniformes escolares, deportivos y otras prendas de vestir.</li>
+              <li><b>Locales:</b> Santa Rosa de Cusubamba, Cayambe, Pichincha – Ecuador; y Guayllabamba, Pichincha – Ecuador.</li>
+              <li><b>Contacto:</b> WhatsApp +593 99 840 3920 (Cusubamba) y +593 99 870 7995 (Guayllabamba).</li>
+            </ul>
+            <h4>2. Objeto</h4>
+            <p>Este sitio web tiene carácter informativo. Exhibe el catálogo de productos de ANK y facilita el contacto por WhatsApp para solicitar cotizaciones. No es una tienda en línea y no realiza ventas ni cobros.</p>
+            <h4>3. Propiedad intelectual</h4>
+            <p>La marca ANK, el logotipo, los textos, fotografías, diseños y demás contenidos del sitio pertenecen a ANK o se usan con autorización, y están protegidos por la normativa ecuatoriana de propiedad intelectual. Queda prohibida su reproducción, distribución o modificación sin autorización previa y por escrito. Los logos y escudos de instituciones o equipos que aparezcan en nuestros trabajos pertenecen a sus respectivos dueños.</p>
+            <h4>4. Precios y disponibilidad</h4>
+            <p>Los productos del catálogo no constituyen una oferta de venta con precio cerrado; sus precios y disponibilidad se informan de manera personalizada en cada cotización. Las promociones publicadas en la sección "Promociones" sí indican su precio o beneficio y su vigencia, y se rigen por la cláusula de Promociones de los Términos y Condiciones.</p>
+            <h4>5. Responsabilidad</h4>
+            <p>ANK procura que la información del sitio esté actualizada y sea correcta, pero no garantiza la ausencia de errores ni que el sitio esté disponible de forma ininterrumpida. ANK no se hace responsable por daños derivados del uso del sitio ni por el contenido de los sitios de terceros enlazados.</p>
+            <h4>6. Legislación aplicable</h4>
+            <p>Este aviso legal se rige por la legislación de la República del Ecuador.</p>
+          </article>
+
+          <!-- ===== PROTECCIÓN DE DATOS ===== -->
+          <article data-legal-doc="Protección de Datos" hidden>
+            <p class="legal-content__date">Última actualización: noviembre de 2026</p>
+            <h4>1. Marco legal</h4>
+            <p>ANK trata los datos personales conforme a la Ley Orgánica de Protección de Datos Personales del Ecuador (Registro Oficial Suplemento 459, de 26 de mayo de 2021) y su Reglamento General.</p>
+            <h4>2. Responsable del tratamiento</h4>
+            <p>El responsable de los datos personales es ANK, cuya titular es Maritsa Elizabeth Azaiga Rojas (RUC 1717032229001), con locales en Santa Rosa de Cusubamba y Guayllabamba, provincia de Pichincha. Puedes contactarnos por WhatsApp a los números indicados en este sitio.</p>
+            <h4>3. Datos que tratamos y finalidad</h4>
+            <p>Solo tratamos los datos que nos entregas voluntariamente por WhatsApp (nombre, teléfono, institución y detalles del pedido) con la única finalidad de atender tu cotización y gestionar tu pedido.</p>
+            <h4>4. Base legal</h4>
+            <p>El tratamiento se basa en tu consentimiento, que otorgas al escribirnos y compartir tus datos, y en la necesidad de ejecutar las medidas previas a un contrato o el contrato que acuerdes con nosotros.</p>
+            <h4>5. Conservación</h4>
+            <p>Conservamos tus datos mientras sea necesario para atender tu solicitud o pedido y para cumplir obligaciones legales (por ejemplo, tributarias). Después, se eliminan o se conservan bloqueados según lo que exija la ley.</p>
+            <h4>6. Tus derechos</h4>
+            <p>Como titular de tus datos puedes ejercer en cualquier momento tus derechos de:</p>
+            <ul>
+              <li><b>Acceso:</b> saber qué datos tuyos tenemos.</li>
+              <li><b>Rectificación y actualización:</b> corregir datos inexactos o incompletos.</li>
+              <li><b>Eliminación:</b> pedir que borremos tus datos.</li>
+              <li><b>Oposición:</b> negarte a determinados usos de tus datos.</li>
+              <li><b>Portabilidad:</b> recibir tus datos en un formato estructurado.</li>
+              <li><b>Suspensión del tratamiento</b> y a no ser objeto de decisiones automatizadas.</li>
+              <li><b>Revocar tu consentimiento</b> cuando lo desees.</li>
+            </ul>
+            <p>Para ejercerlos, escríbenos por WhatsApp indicando tu nombre y tu solicitud. Te responderemos dentro de los plazos establecidos por la ley.</p>
+            <h4>7. Seguridad</h4>
+            <p>Aplicamos medidas razonables para proteger tus datos contra pérdida, uso indebido o acceso no autorizado, y solo el personal de ANK que atiende tu pedido tiene acceso a ellos.</p>
+            <h4>8. Transferencias</h4>
+            <p>No compartimos tus datos con terceros, salvo cuando sea necesario para entregar tu pedido (por ejemplo, un servicio de transporte) o cuando una autoridad competente lo requiera conforme a la ley. Ten en cuenta que WhatsApp es un servicio de Meta y se rige también por su propia política de privacidad.</p>
+            <h4>9. Reclamos</h4>
+            <p>Si consideras que tus derechos no han sido atendidos, puedes presentar un reclamo ante la Superintendencia de Protección de Datos Personales del Ecuador.</p>
+          </article>
+
+        </div>
         <button class="btn btn--primary" data-close>Entendido</button>
       </div>
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=20261127"></script>
 </body>
 </html>

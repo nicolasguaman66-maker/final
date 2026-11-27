@@ -1,0 +1,10 @@
+Coloca aqui las fotos de los uniformes con estos nombres exactos (minusculas, .jpg):
+
+institucion1-deportivo.jpg   institucion1-lunes.jpg   institucion1-diario.jpg
+institucion2-deportivo.jpg   institucion2-lunes.jpg   institucion2-diario.jpg
+institucion3-deportivo.jpg   institucion3-lunes.jpg   institucion3-diario.jpg
+institucion4-deportivo.jpg   institucion4-lunes.jpg   institucion4-diario.jpg
+institucion5-deportivo.jpg   institucion5-lunes.jpg   institucion5-diario.jpg
+institucion6-deportivo.jpg   institucion6-lunes.jpg   institucion6-diario.jpg
+
+No hace falta tocar el codigo. Si falta una foto, la pagina muestra "Foto proximamente".

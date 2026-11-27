@@ -2,3 +2,15 @@
 .vscode/
 Thumbs.db
 .DS_Store
+
+# Datos privados del panel (contraseña cifrada e intentos): no subir al repositorio
+admin/privado/acceso.json
+admin/privado/intentos.json
+
+ank-hostinger.zip
+
+# Datos que guarda el panel en el servidor: no se suben al repositorio
+# (así un despliegue automático no pisa las fotos, promociones ni redes del panel)
+data/contenido.json
+uploads/*
+!uploads/.htaccess

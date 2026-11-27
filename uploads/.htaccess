@@ -1,0 +1,6 @@
+# Aquí solo se guardan fotos subidas desde el panel. Por seguridad, nunca se ejecuta código.
+Options -Indexes
+<FilesMatch "\.(php|php\d|phtml|phar|pl|py|cgi|sh|shtml|htaccess)$">
+  Require all denied
+</FilesMatch>
+RemoveHandler .php .phtml .php3 .php4 .php5 .php7 .php8 .phar
